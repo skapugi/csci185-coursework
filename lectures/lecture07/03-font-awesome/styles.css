@@ -1,0 +1,19 @@
+/* Font Awesome version  6.2.1 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+
+i {
+    font-size: 20px;
+}
+
+.fa-mug-saucer {
+    color: rgb(104, 23, 23, 0.598);
+}
+
+.fa-heart {
+    color: red;
+}
+
+.fa-feather-pointed {
+    color: wheat;
+}
