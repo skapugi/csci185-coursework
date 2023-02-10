@@ -1,13 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
 }
 
 body {
-    margin: 0px;
-    font-family: Arial, sans-serif;
+    background-color: rgb(223, 209, 189);
+}
+
+main {
+    margin-inline: 25%;
 }
 
 p, a, li {
     line-height: 1.5em;
     font-size: 1.1em;
+}
+
+header h1 {
+    margin-inline: 25%;
+    text-align: center;
+    text-decoration: underline;
 }
