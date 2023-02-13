@@ -1,0 +1,47 @@
+body * {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+/* Part 2 */
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Part 1 */
+
+.card {
+    width: 25%;
+    border: solid 1px brown;
+}
+
+.card h2, .card p, .card button {
+    margin: 20px;
+}
+
+.card img {
+    width: 100%;
+}
+
+/* Responsive design for mobile and tablet */
+
+@media screen and (max-width: 450px) {
+    .card {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        width: 50%;
+    }
+}
