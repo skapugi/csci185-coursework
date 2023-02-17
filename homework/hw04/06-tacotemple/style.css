@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Creates 2x2 grid of all elements in main */
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Creates 2x1 grid of all elements in a section, with a 4:1 ratio for first to second column */
+section {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    border: 3px gray solid;
+}
+
+/* Set image to exist in second column. Add margin to all important elements in sections, apply color. */
+section img { grid-column: 2 / span 1; }
+section h2, section p, section span, section img { margin: 20px; }
+section p, section span { color: rgb(83, 83, 83); }

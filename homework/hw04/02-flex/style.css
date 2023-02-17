@@ -1,0 +1,29 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* create additional rules below:  */
+
+/* Sets height of all sections to browser height, creates flex, centers objects and aligns them in a column */
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Color definitions per section */
+#home { background-color: pink; }
+#bio { background-color: violet; }
+#portfolio { background-color: aquamarine; }
+#contact { background-color: wheat; }
