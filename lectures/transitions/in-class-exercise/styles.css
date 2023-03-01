@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20vh 20vw;
+}
+
+.section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section-container section {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: #CCC;
+}
+
+#section1 {
+    background: #0c7474;
+    color: white;
+    transition: all 0.3s ease-out;
+}
+
+#section1:hover {
+    background: purple;
+    width: 220px;
+    height: 220px;
+}
+
+#section2 {
+    background: #ff99cc;
+    transition: all 0.3s linear;
+}
+
+#section2:hover {
+    background:#ff66cc;
+    translate: 0px 5px;
+}
+
+#section3 {
+    background:#33ccff;
+    transition: all 0.1s ease-in-out;
+}
+
+#section3:hover {
+    border: 5px black solid;
+    border-radius: 50px;
+}
+
+
+
+a {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #6699ff;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #6666ff;
+}
+
+a:active {
+    background-color: #6600ff;
+}
