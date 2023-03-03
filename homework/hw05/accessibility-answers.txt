@@ -1,14 +1,15 @@
 1. What corrections did you have to make?
 
-Your answers here.
+The only corrections I had to make were adding the aria tags, and alt text. Wave didn't report any other issues.
 
-1. Do you think your website is usable if you turn off the CSS? Why or why not?
+2. Do you think your website is usable if you turn off the CSS? Why or why not?
 
-Your answers here.
+It depends on one's definition of usable. Can it provide all the same information? Yes. Does it provide it in a format that can be easily understood? No.
+I would argue that the website is unusable if you turn off the CSS, although not totally lacking.
 
-1. Is your site is tabbable? In other words, without the use of the mouse, are all the links and buttons accessible using the tab key?
+3. Is your site is tabbable? In other words, without the use of the mouse, are all the links and buttons accessible using the tab key?
 
-Your answers here.
+Yes.
 
 
 

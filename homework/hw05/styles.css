@@ -1,13 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Roboto:wght@300&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
 
 body * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
     margin: 0;
+    padding: 0;
 }
 
 /* Your CSS Code Here! */
+
+/* HEADER */
+header {
+    background-color: #78CAD2;
+    font-family: 'Gloock', serif;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-top: 20px;
+}
+
+header nav ul a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header div img { border-radius: 50%; }
+
+header div h1 { padding: 25px; }
+
+/* ABOUT ME */
+
+#about {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+#about h2 {
+    font-family: 'Gloock', serif;
+    padding-bottom: 25px;
+}
+
+#about p { font-family: 'Roboto', sans-serif; }
+
+/* PROJECTS */
+
+#projects { background-color: lightgray; }
+
+#projects h2 {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-family: 'Gloock', serif;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#projects .project-holder {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#projects .card {
+    display: inline-block;
+    width: 28%;
+    margin-left: 10vw;
+    margin-right: 10vh;
+}
+
+#projects .card h3 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 25px;
+}
+#projects .card p {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 50px;
+}
+
+#projects .card img {
+    width: 100%;
+}
+
+/* CONTACT */
+
+#contact {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+#contact h2 {
+    font-family: 'Gloock', serif;
+    padding-bottom: 25px;
+}
+
+#contact p {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#contact .contact-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#contact .contact-details form {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+}
+
+#contact .contact-details form input, #contact .contact-details form textarea {
+    background-color: lightgray;
+    padding: 25px;
+}
+
+#contact .contact-details #contact-info {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+/* RESPONSIVE DESIGN (TABLETS) */
+
+@media screen and (max-width: 800px) {
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        padding-top: 20px;
+    }
+
+
+    #projects .card {
+        display: inline-block;
+        width: 75%;
+        margin-left: 10vw;
+        margin-right: 10vh;
+    }
+
+    #contact .contact-details {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #contact .contact-details form {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    #contact .contact-details #contact-info {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+}

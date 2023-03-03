@@ -10,12 +10,13 @@
     <title>My Portfolio Site</title>
 </head>
 <body>
+
     <header>
         <nav>
             <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div>
@@ -23,6 +24,7 @@
             <h1>Welcome to my portfolio website</h1>
         </div>
     </header>
+
     <section id="about">
         <h2>About Me</h2>
         <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.</p>
@@ -34,42 +36,44 @@
             vulputate lorem neque cubilia.
         </p>
     </section>
+
     <section id="projects">
         <h2>Projects</h2>
         <div class="project-holder">
             <section class="card">
-                <img src="https://picsum.photos/id/1061/300/200" alt="image description 1" />
+                <img src="https://picsum.photos/id/1061/300/200" alt="Picture overlooking a stony beach" />
                 <h3>Name of Project</h3>
                 <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
             </section>
             <section class="card">
-                <img src="https://picsum.photos/id/1015/300/200" alt="image description 2" />
+                <img src="https://picsum.photos/id/1015/300/200" alt="Picture overlooking a clear blue river canyon" />
                 <h3>Name of Project</h3>
                 <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
             </section>
             <section class="card">
-                <img src="https://picsum.photos/id/572/300/200" alt="image description 3" />
+                <img src="https://picsum.photos/id/572/300/200" alt="Picture looking at a rocky mountaintop" />
                 <h3>Name of Project</h3>
                 <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
             </section>
             <section class="card">
-                <img src="https://picsum.photos/id/573/300/200" alt="image description 4" />
+                <img src="https://picsum.photos/id/573/300/200" alt="Picture looking at greenery with a waterfall" />
                 <h3>Name of Project</h3>
                 <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
             </section>
         </div>
     </section>
+
     <section id="contact">
         <h2>Get In Touch</h2>
         <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
         <div class="contact-details">
             <form method="post" action="#">
                 <div class="row row1">
-                    <input type="text" name="name" id="name" placeholder="Name"/>
-                    <input type="email" name="email" id="email" placeholder="Email" />
+                    <input type="text" name="name" id="name" placeholder="Name" aria-label="Name"/>
+                    <input type="email" name="email" id="email" placeholder="Email" aria-label="Email"/>
                 </div>
                 <div class="row">
-                    <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+                    <textarea name="message" id="message" placeholder="Message" rows="4" aria-label="Message"></textarea>
                 </div>
                 <div class="row">
                     <input id="submit" type="submit" value="Send Message">
@@ -99,6 +103,7 @@
             </section>
         </div>
     </section>
+    
     <footer>
         <p>Copyright {{your name}}, 2022.</p>
     </footer>
