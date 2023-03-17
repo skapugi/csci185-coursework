@@ -1,0 +1,96 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+/* Default styling */
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, main, footer {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+header img, footer img {
+    width: 200px;
+}
+
+/* Header. Organzies navigation menu. */
+
+header {
+    background-color: #013672;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* Text Headers. The 'Passion One' font is used, h1 is centered and margin are added to create distinct 'sections'. */
+
+h1, h2, h3 {
+    font-family: 'Passion One';
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2 {
+    margin-top: 3em;
+}
+
+/* Cards. Cards are organized into two columns; individual cards are also organized into two columns, to display content neatly. */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    border: 2px lightgray solid;
+    padding: 10px;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Card Transitions. Chanes background colour to blue and font colour to white upon hover. */
+
+.card:hover {
+    color: white;
+    background-color: #013672;
+    transition-duration: 0.2s;
+}
+
+/* Responsive Layout for Tablets. Sets cards to display in a single column, and removes navigation menu. */
+
+@media screen and (max-width: 800px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: none;
+    }
+
+}
