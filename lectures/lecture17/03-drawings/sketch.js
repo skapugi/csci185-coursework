@@ -9,39 +9,20 @@ function setup() {
         * Draw a tree
         * Draw a car
         * Draw some abstract art
-    */
-
-    // https://p5js.org/reference/#/p5/circle
-    fill("teal")
-    circle(300, 200, 200);
-
-    // https://p5js.org/reference/#/p5/rect
-    fill('hotpink')
-    rect(30, 20, 55, 55);
-
-    // add your drawing here:
-    // https://p5js.org/reference/#/p5/point
-    // point(110, 20);
-
-    // https://p5js.org/reference/#/p5/text
-    // text("Here is some text", 200, 40);
-
-    // https://p5js.org/reference/#/p5/ellipse
-    // fill('red');
-    // ellipse(100, 200, 60, 100);
-
-    // Other shapes...
-    // Polygon: https://p5js.org/reference/#/p5/beginShape
-    // Line: https://p5js.org/reference/#/p5/line
-    
-    // Curve: https://p5js.org/reference/#/p5/curve
+    */    
 
     /* The Creature */
     fill("teal");
-    circle(1100, 200, 200);
-    rect(200, 200, 1000, 200);
-    rect(200, 200, 200, 500);
-    rect(1000, 200, 200, 500);
+    frogger(300, 200);
+
+    function frogger(startX, startY) {
+        const size = 200;
+        circle(startX, startY, size);
+        circle(startX + 800, startY, size);
+        rect(startX - 100, startY, size + 800, size);
+        rect(startX - 100, startY, size, size + 300);
+        rect(startX + 700, startY, size, size + 300);
+    }
 
     // for debugging:
     drawGrid(canvasWidth, canvasHeight)
