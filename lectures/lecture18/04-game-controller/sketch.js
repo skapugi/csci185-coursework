@@ -23,9 +23,41 @@ const moveController = ev => {
     // up arrow moves circle up
     // down arrow moves circle down
 
+    switch(ev.code) {
+
+        case "ArrowLeft":
+            x -= 10;
+            break;
+
+        case "ArrowRight":
+            x += 10;
+            break;
+
+        case "ArrowUp":
+            y -= 10;
+            break;
+
+        case "ArrowDown":
+            y += 10;
+            break;
+
+        case "Equal":
+            width += 10;
+            break;
+
+        case "Minus":
+            width -= 10;
+            break;
+
+        case "KeyR":
+            fillColor = 'red';
+
+    }
+
+
     // redraw circle:
     clear();
-    noFill();
+    fill(fillColor);
     circle(x, y, width);
     drawGrid(canvasWidth, canvasHeight);
 }
